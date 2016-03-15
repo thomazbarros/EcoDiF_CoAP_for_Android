@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/http" />
+
+    <EditText
+        android:id="@+id/httpUrlET"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textUri" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/datastream" />
+
+    <EditText
+        android:id="@+id/datastreamET"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number" />
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/interval" />
+
+    <EditText
+        android:id="@+id/intervalTimeET"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:digits="0123456789" />
+
+    <!-- <LinearLayout -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:orientation="horizontal"> -->
+
+
+    <!-- <Button -->
+    <!-- android:id="@+id/bStart" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:onClick="onClickStartService" -->
+    <!-- android:text="@string/start" > -->
+    <!-- </Button> -->
+
+
+    <!-- <Button -->
+    <!-- android:id="@+id/bStop" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:onClick="onClickStopService" -->
+    <!-- android:text="@string/stop" > -->
+    <!-- </Button> -->
+    <!-- </LinearLayout> -->
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:shrinkColumns="*"
+        android:stretchColumns="*" >
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/bStart"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onClickStartService"
+                android:text="@string/start" >
+            </Button>
+
+            <Button
+                android:id="@+id/bStop"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onClickStopService"
+                android:text="@string/stop" >
+            </Button>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/luminosityTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/luminosity"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/luminosityResultTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" >
+            </TextView>
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>
+
+
+<!-- <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" -->
+<!--     xmlns:tools="http://schemas.android.com/tools" -->
+<!--     android:layout_width="match_parent" -->
+<!--     android:layout_height="match_parent" -->
+<!--     tools:context=".MainActivity" > -->
+ 
+<!--     <TextView -->
+<!--         android:id="@+id/text_view_header" -->
+<!--         android:layout_width="fill_parent" -->
+<!--         android:layout_height="wrap_content" -->
+<!--           android:gravity="center_horizontal" -->
+<!--           android:textColor="#FF0000" -->
+<!--         android:textSize="20sp" -->
+<!--         android:text="Painel Básico de Start/Stop" /> -->
+ 
+<!--      <Button -->
+<!--          android:id="@+id/start_service" -->
+<!--          android:layout_width="wrap_content" -->
+<!--          android:layout_height="wrap_content" -->
+<!--          android:layout_alignParentLeft="true" -->
+<!--          android:layout_below="@+id/text_view_header" -->
+<!--          android:layout_marginLeft="50dp" -->
+<!--          android:layout_marginTop="17dp" -->
+<!--          android:onClick="onClickStartService" -->
+<!--          android:text="Start Service" /> -->
+ 
+<!--      <Button -->
+<!--          android:id="@+id/stop_service" -->
+<!--          android:layout_width="wrap_content" -->
+<!--          android:layout_height="wrap_content" -->
+<!--          android:layout_alignRight="@+id/start_service" -->
+<!--          android:layout_below="@+id/start_service" -->
+<!--          android:gravity="center" -->
+<!--          android:onClick="onClickStopService" -->
+<!--          android:text="Stop Service" /> -->
+ 
+<!--      <Button -->
+<!--          android:id="@+id/send_message" -->
+<!--          android:layout_width="wrap_content" -->
+<!--          android:layout_height="wrap_content" -->
+<!--          android:layout_alignLeft="@+id/stop_service" -->
+<!--          android:layout_below="@+id/stop_service" -->
+<!--          android:gravity="center" -->
+<!--          android:onClick="onClickSendMessage" -->
+<!--          android:text="Send Message" /> -->
+ 
+<!-- </RelativeLayout> -->

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/http" />
+
+    <EditText
+        android:id="@+id/httpUrlET"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textUri" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/datastream" />
+
+    <EditText
+        android:id="@+id/datastreamET"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/interval" />
+
+    <EditText
+        android:id="@+id/intervalTimeET"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:digits="0123456789"
+        android:inputType="number" />
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:shrinkColumns="*"
+        android:stretchColumns="*" >
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/bStart"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onClickStartService"
+                android:text="@string/start" >
+            </Button>
+
+            <Button
+                android:id="@+id/bStop"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onClickStopService"
+                android:text="@string/stop" >
+            </Button>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/proximityTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/proximity"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/proximityResultTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" >
+            </TextView>
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

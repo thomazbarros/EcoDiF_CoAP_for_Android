@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.ufrj.nce.ubicomp.ecodifcoap">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AccelerometerActivity"
+            android:label="@string/accelerometerActivityTitle"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name=".AmbientTemperatureActivity"
+            android:label="@string/ambientTemperatureActivityTitle"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name=".AvailableSensorsActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name=".GravityActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name=".GyroscopeActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name=".InternalTemperatureActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name=".LightActivity"
+            android:label="@string/luminosityActivityTitle"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name=".LocationActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name=".MagneticFieldActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity android:name=".OrientationActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name=".PressureActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name=".ProximityActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+
+        <service android:name="br.ufrj.nce.ubicomp.sensors.Accelerometer"
+            android:enabled="true">
+
+        </service>
+        <service android:name="br.ufrj.nce.ubicomp.sensors.AmbientTemperature" android:enabled="true">
+
+        </service>
+
+        <service android:name="br.ufrj.nce.ubicomp.sensors.Gravity" android:enabled="true">
+
+        </service>
+        <service android:name="br.ufrj.nce.ubicomp.sensors.Gyroscope" android:enabled="true">
+
+        </service>
+        <service android:name="br.ufrj.nce.ubicomp.sensors.InternalTemperature" android:enabled="true">
+
+        </service>
+        <service android:name="br.ufrj.nce.ubicomp.sensors.Light" android:enabled="true">
+
+        </service>
+        <service android:name="br.ufrj.nce.ubicomp.sensors.Location" android:enabled="true">
+
+        </service>
+        <service android:name="br.ufrj.nce.ubicomp.sensors.MagneticField" android:enabled="true">
+
+        </service>
+        <service android:name="br.ufrj.nce.ubicomp.sensors.Orientation" android:enabled="true">
+
+        </service>
+        <service android:name="br.ufrj.nce.ubicomp.sensors.Pressure" android:enabled="true">
+
+        </service>
+        <service android:name="br.ufrj.nce.ubicomp.sensors.Proximity" android:enabled="true">
+
+        </service>
+    </application>
+
+</manifest>
